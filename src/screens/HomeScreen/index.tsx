@@ -2,14 +2,15 @@ import React , {useEffect, useState} from 'react'
 import { View, ScrollView, Text } from 'react-native'
 import styles from './styles'
 import { AntDesign } from '@expo/vector-icons'; 
-import productasssets from '../../../assets/products';
+import productassets from '../../../assets/products';
 import { Product } from '../../models/index'
+import FavoriteProductItem from '../../components/FavoriteProductItem'
 
 function index() {
 
     const [product, setProduct] = useState<Product[]>([])
     useEffect(()=> {
-        setProduct(productasssets)
+        setProduct(productassets)
     },[]) 
 
         return(
@@ -30,7 +31,7 @@ function index() {
                 horizontal={true}
             >
                 {product.map(item => {
-                    return(<Text>{item.brand}</Text>)
+                    return<FavoriteProductItem key={item.id} product={item}/>
                 }) }
             </ScrollView>
         </View>
