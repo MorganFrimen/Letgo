@@ -8,7 +8,9 @@ const styles = StyleSheet.create({
     },
     titleProducts: {
         justifyContent: 'space-between',
-        flexDirection: 'row'
+        flexDirection: 'row',
+        alignItems: 'center',
+        marginVertical: 16,
     },
     topicTitle: {
         fontWeight: 'bold',
