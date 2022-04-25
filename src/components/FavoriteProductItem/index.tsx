@@ -7,9 +7,7 @@ import { AntDesign } from '@expo/vector-icons';
 type productProps = {
     product: Product
 }
-type AntDesign = {
-  AntDesign: string
-}
+
 
 function index({product}:productProps){
     return(
@@ -20,8 +18,11 @@ function index({product}:productProps){
                 resizeMode="stretch"
                 style={styles.favoriteImage}
               />
+              <View style={styles.labelFav} >
+                <Text style={{fontSize: 12, fontWeight: '500',}} > Топ цена </Text>
+              </View>
               <TouchableOpacity> 
-                <AntDesign style={{position:"absolute", left:4, bottom: 5 }} name="heart" size={26} color="red" />
+                <AntDesign style={{position:"absolute", right:4, bottom: 5 }} name="heart" size={26} color="red" />
               </TouchableOpacity>
           </View>
       </TouchableOpacity>
