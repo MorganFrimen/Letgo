@@ -3,7 +3,7 @@ import { View, ScrollView, Text } from 'react-native'
 import styles from './styles'
 import { AntDesign } from '@expo/vector-icons'; 
 import productassets from '../../../assets/products';
-import { Product } from '../../models/index'
+import { Product } from '../../models'
 import FavoriteProductItem from '../FavoriteProductItem'
 
 function index() {

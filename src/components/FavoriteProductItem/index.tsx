@@ -8,7 +8,6 @@ type productProps = {
     product: Product
 }
 
-
 function index({product}:productProps){
     return(
       <TouchableOpacity style={styles.favorite}>
