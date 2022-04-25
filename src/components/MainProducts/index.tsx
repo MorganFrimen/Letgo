@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { View, Text } from "react-native";
 import { AntDesign } from '@expo/vector-icons'; 
 import { Product } from '../../models'
-
+import productAssets from '../../../assets/products';
+import MainProductItem from '../MainProductItem/index'
 import styles from './styles'
 
-type mainProductProps = {
-    mainProducts:Product
-}
+function index (){
+    const [mainProduct, setMainProducts] = useState<Product[]>([])
+    useEffect(()=>{
+        setMainProducts(productAssets)
+    },[])   
 
-function index ({mainProducts}:mainProductProps){
     return(
         <View style={styles.productsContainer} >
                 <View style={styles.titleProducts} >
@@ -20,8 +22,8 @@ function index ({mainProducts}:mainProductProps){
                 </View>
             </View>
             <View>
-                {mainProducts.map(item => {
-                    return(<Text key={item.id} > {item.brand} </Text>)
+               {mainProduct.map(item => {
+                   return<MainProductItem key={item.id} mainProduct={item}/>
                 })}
             </View>
         </View>
