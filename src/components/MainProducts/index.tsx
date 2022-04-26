@@ -21,7 +21,7 @@ function index (){
                     <AntDesign name="right" size={19} color="#F24E61"/>
                 </View>
             </View>
-            <View>
+            <View style={styles.listProduct} >
                {mainProduct.map(item => {
                    return<MainProductItem key={item.id} mainProduct={item}/>
                 })}

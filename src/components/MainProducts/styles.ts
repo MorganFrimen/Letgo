@@ -18,6 +18,12 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 14,
         color: '#F24E61',
+    },
+    listProduct: {
+        flex: 1,
+        flexDirection: 'row',
+        alignItems: 'flex-start',
+        flexWrap: 'wrap',
     }
 })
 
