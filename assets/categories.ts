@@ -6,27 +6,27 @@ export default [
       }
   ,{
     id: "2",
-    name: "Araba",
+    name: "Авто",
     src: require("../assets/categoryAraba.png"),
   },
   {
     id: "3",
-    name: "Elektronik",
+    name: "Электроника",
     src: require("../assets/categoryElectronic.png"),
   },
   {
     id: "4",
-    name: "Ev Eşyaları",
+    name: "Для дома",
     src: require("../assets/categoryEv.png"),
   },
   {
     id: "5",
-    name: "Diğer Araçlar",
+    name: "Инструменты",
     src: require("../assets/categoryAraclar.png"),
   },
   {
     id: "6",
-    name: "Giyim",
+    name: "Женское",
     src: require("../assets/categoryGiyim.png"),
   }
 ];

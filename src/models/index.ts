@@ -11,3 +11,8 @@ export declare class Product {
     readonly description: string;
     readonly countInStock?: number | null;
   }
+  export declare class Category {
+    readonly id: string;
+    readonly name: string;
+    readonly src: any
+  }
