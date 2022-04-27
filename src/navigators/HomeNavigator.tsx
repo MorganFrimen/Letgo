@@ -3,6 +3,7 @@ import { createStackNavigator } from '@react-navigation/stack'
 import HomeScreen from '../screens/HomeScreen'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { TouchableOpacity,Image, TextInput,Text } from 'react-native'
+import CategoryFiltrScreen from '../screens/CategoryFiltrScreen'
 
 const Stack = createStackNavigator()
 
@@ -24,6 +25,15 @@ function HomeNavigator() {
         <Stack.Screen
             name='Home'
             component={HomeScreen}
+            options={{
+                header:()=>(
+                    <MainHeaderComponent/>
+                )
+            }}
+        />
+        <Stack.Screen
+            name='CatecoryFiltring'
+            component={CategoryFiltrScreen}
             options={{
                 header:()=>(
                     <MainHeaderComponent/>

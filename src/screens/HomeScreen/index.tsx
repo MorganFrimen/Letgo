@@ -2,7 +2,7 @@ import React from 'react'
 import { ScrollView } from 'react-native'
 import FavoritesProducts from '../../components/FavoriteProducts'
 import MainProducts from '../../components/MainProducts'
-import CategoryFilter from '../../components/CategoryFiltr'
+import CategoryFilter from '../../components/CategoryFilter'
 import MesseageNotification from '../../components/MesseageNotification'
 
 function Index() {
