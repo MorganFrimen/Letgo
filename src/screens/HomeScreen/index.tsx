@@ -5,7 +5,7 @@ import MainProducts from '../../components/MainProducts'
 import CategoryFilter from '../../components/CategoryFiltr'
 import MesseageNotification from '../../components/MesseageNotification'
 
-function index() {
+function Index() {
 
         return(
         <ScrollView>
@@ -17,4 +17,4 @@ function index() {
     )
 }
 
-export default index
+export default Index
