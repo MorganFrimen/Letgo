@@ -5,7 +5,7 @@ const {width, height} = Dimensions.get('window')
 const styles = StyleSheet.create({
     scrollStyle: {
         marginTop: 24,
-        height:height*0.09,
+        height:height*0.11,
     },
     center: {
         flexDirection: 'column',
